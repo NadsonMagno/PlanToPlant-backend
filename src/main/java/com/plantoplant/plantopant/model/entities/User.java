@@ -8,11 +8,19 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "tb_users")
+@NoArgsConstructor
 public class User {
 
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
+
+    string name;
+
+    string email;
+    string password;
+
+    string profilePincture;
 
 }
