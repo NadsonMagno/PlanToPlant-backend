@@ -5,6 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "tb_users")
@@ -16,12 +17,12 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    string name;
+    private String name;
 
-    string email;
-    string password;
+    private String email;
+    private String password;
 
-    string profilePincture;
+    private String profilePincture;
     
 
 }
